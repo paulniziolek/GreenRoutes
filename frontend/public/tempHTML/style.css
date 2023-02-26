@@ -73,6 +73,12 @@ nav img{
 .text-box h1{
     font-size: 80px;
 }
+
+.train img{
+    float: left;
+    padding-top: 160px;
+}
+
 .text-box h2{
     font-size: 55px;
     margin-top: -20px;
@@ -142,7 +148,7 @@ nav img{
 /* SECTION 2 */
 
 
-.course{
+.plan{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -170,7 +176,7 @@ h2{
 /* SECTION 3 */
 
 
-.features{
+.future{
     width: 100%;
     margin: auto;
     text-align: center;
@@ -183,19 +189,19 @@ h2{
     display: flex;
     justify-content: space-between;
 }
-.features-col{
+.future-col{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
 }
 
-.features-col img{
+.future-col img{
     width: 100%;
     border-radius: 10px;
 }
 
-.features-col h3{
+.future-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: center;
