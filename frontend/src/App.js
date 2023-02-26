@@ -1,9 +1,11 @@
 import './App.css';
+import MapsAPI from './components/MapsAPI';
 
 function App() {
   return (
     <div className="App">
-      App
+      Testing
+      <MapsAPI />
     </div>
   );
 }
