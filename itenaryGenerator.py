@@ -14,5 +14,4 @@ def iGenerator(startLoc, endLoc):
     responseText = response.choices[0].text
     
     return responseText
-print(iGenerator("5 Thurston Dr, Livingston, NJ 07039","1978 River Road, Bushkill, PA 18324"))
     
