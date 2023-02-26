@@ -4,6 +4,7 @@ import TripsPage from './components/TripsPage';
 import TripPage from './components/TripPage';
 import AddTripForm from './components/AddTripForm';
 import NavBar from './components/NavBar';
+import AboutPage from './components/AboutPage';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/trips" element={<TripsPage />} />
         <Route path="/add-trip" element={<AddTripForm />} />
         <Route path="/trip/:id" element={<TripPage />} />
-
+        <Route path="/about" element={<AboutPage />}/>
       </Routes>
     </Router>
 

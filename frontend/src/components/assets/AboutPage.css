@@ -1,0 +1,31 @@
+.features{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color:rgb(0, 0, 0);
+    background: #fff
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.features-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.features-col img{
+    width: 275px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.features-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
