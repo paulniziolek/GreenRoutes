@@ -67,21 +67,6 @@ def create_trip():
     return jsonify({'message': 'Trip created successfully.'})
 
 
-trips = [
-    {
-        'trip_id': '0',
-        'name': 'My NYC Trip',
-        'locations': ['New Brunswick', 'NY Penn Station', 'Destination'],
-        'itinerary': 'CHATGPT GENERATED ITINERARY!'
-    },
-    {
-        'trip_id': '1',
-        'name': 'test',
-        'locations': ['test', 'test'],
-        'itinerary': 'test'
-    }
-]
-
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
