@@ -7,12 +7,11 @@ const TripsPage = ({props}) => {
 
     return (
     <div className="Trips">
-        <NavBar />
 
         {props.map(trip => <TripCard 
         name={trip.name}
         locations={trip.locations}
-        itinerary={trip.itinerary}
+        id={trip.id}
         key={trip.id} />)} 
 
     </div>

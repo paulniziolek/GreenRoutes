@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import AddTripForm from './components/AddTripForm';
 import NavBar from './components/NavBar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
 
@@ -20,22 +21,17 @@ function App() {
 
 
   return (
-    <div className="App">
-      <TripsPage props={trips}/>
-      
-
-{/*
-      <TripsPage props={trips}/>
+    <Router>
+      <NavBar />
       <Routes>
-        <Route path="/" element={<h1>Test</h1>}>
-          <Route index element={<HomePage />} />
-          <Route component={HomePage} />
-        </Route>
-      </Routes>
-*/}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/trips" element={<TripsPage props={trips} />} />
+        <Route path="/add-trip" element={<AddTripForm />} />
 
-    </div>
-  );
+      </Routes>
+    </Router>
+
+  )
 }
 
 export default App;

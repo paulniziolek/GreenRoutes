@@ -5,7 +5,6 @@ import NavBar from './NavBar';
 const HomePage = () => {
     return (
         <div className="Home">
-            <NavBar />
 
 
             
