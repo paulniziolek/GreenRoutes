@@ -50,6 +50,7 @@ const MapsAPI = () => {
         .catch(error => console.log(error.response))
     })
 
+    
 
     return (
         <div>

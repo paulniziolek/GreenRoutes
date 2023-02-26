@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask import request, jsonify
-#from flask_cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = '8d57e6c31466df4e332253b6a2c926c1'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///greenroutes.db'
 db = SQLAlchemy(app)
