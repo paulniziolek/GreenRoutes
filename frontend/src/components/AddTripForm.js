@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './assets/AddTripForm.css'
+
 const AddTripForm = () => {
 
     const [tripName, setTripName] = useState("");

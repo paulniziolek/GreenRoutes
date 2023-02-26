@@ -15,7 +15,7 @@ const TripCard = ({ name, locations, id }) => {
     let navigate = useNavigate()
 
     const onClick = (id) => {
-        navigate(`/trips/${id}`)
+        navigate(`/trip/${id}`)
         console.log(id)
     }
 
@@ -29,9 +29,14 @@ const TripCard = ({ name, locations, id }) => {
                 <p>{locations[0]}</p>
                 <p>{locations[locations.length-1]}</p>
                 <FaTrashAlt 
-                    onClick={() => {handleDelete(id)}}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        handleDelete(id)
+                        navigate(`/trips`)
+                    }}
                     role="button" 
                     tabIndex="0"
+                    
                 />
             </div>
         </div>

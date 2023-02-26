@@ -5,15 +5,25 @@
     border-radius: 10px; /* 5px rounded corners */
     width: 12rem;
     height: 15rem;
+    margin: 2rem;
+    padding: 50px;
+    background-color: #eaf9ed;
   }
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
   }
   
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
     text-align: center;
+  }
+
+  .Trips{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
