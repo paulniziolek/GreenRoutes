@@ -1,0 +1,22 @@
+.text-box{
+    width: 90%;
+    color: #1d2026;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 80px;
+}
+.text-box h2{
+    font-size: 55px;
+    margin-top: -20px;
+    padding: 0;
+}
+.text-box p{
+    margin: margin 10px 0 40px;
+    font-size: 16px;
+    color: #1d2026;
+}

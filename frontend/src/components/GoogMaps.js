@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
+import { GoogleMap, useLoadScript, DirectionsRenderer,Marker} from '@react-google-maps/api'
 import './assets/map.css'
 
 const GoogMaps = () => {

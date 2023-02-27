@@ -28,11 +28,11 @@ const TripPage = () => {
     return (
         <div>
             <div>
-            <form onSubmit={updateTrip}>
-
+            <form className = "form" onSubmit={updateTrip}>
+                <div className="input-container">
                 Name
                 <input value={trip.name} onChange={(e) => setTrip({...trip, 'name': e.target.value})}/>
-
+                </div>
                 <div className="map-container">
                     <GoogMaps />
                 </div>
